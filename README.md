@@ -1,3 +1,5 @@
 # operation-destination
 
-###### By Vitalii\*\*\*
+###### By Vitalii
+
+---
