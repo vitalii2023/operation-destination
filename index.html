@@ -7,17 +7,83 @@
     <title>Operation Destination</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Fauna One", serif;
+        font-size: 16px;
+      }
+
+      h1 {
+        font-family: Cinzel, serif;
+        font-size: 46px;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <div class="header-container container"></div>
+    <header class="header">
+      <div class="header-container container">
+        <h1 class="logo">Operation Destination</h1>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="/">Home</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="/">About</a>
+            </li>
+            <!-- <li class="header-nav-list-item"><a href="/">About</a></li> -->
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <div class="main-container container"></div>
+      <div class="main-container container">
+        <section class="hero-text">
+          <h2 class="hero-heading">Welcome to Opertion Destination</h2>
+          <p>
+            Here you will discover the locations you would like to travel to
+            most.
+          </p>
+          <p>
+            Simply click on your favourite destinations from the randomly
+            generated location cards.
+          </p>
+        </section>
+        <section id="img-container">
+          <div class="img-card">
+            <img class="img-card-img" id="img1" />
+            <h2 id="img-card-destination1" class="img-card-destination"></h2>
+            <p id="img-card-weather1" class="img-card-weather">Weather</p>
+            <p id="img-card-currency1" class="img-card-currency">currency</p>
+          </div>
+          <div class="img-card">
+            <img class="img-card-img" id="img2" />
+            <h2 id="img-card-destination2" class="img-card-destination"></h2>
+            <p id="img-card-weather2" class="img-card-weather">Weather</p>
+            <p id="img-card-currency2" class="img-card-currency">currency</p>
+          </div>
+          <div class="img-card">
+            <img class="img-card-img" id="img3" />
+            <h2 id="img-card-destination3" class="img-card-destination"></h2>
+            <p id="img-card-weather3" class="img-card-weather">Weather</p>
+            <p id="img-card-currency3" class="img-card-currency">currency</p>
+          </div>
+        </section>
+        <canvas id="chart"></canvas>
+      </div>
     </main>
     <footer>
-      <div class="footer-container container"></div>
+      <div class="footer-container container">
+        <h4>&#169; Vitalii</h4>
+      </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

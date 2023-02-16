@@ -6,6 +6,10 @@ html {
 :root {
   --wht: #f8f8f8;
   --blk: #2b2b2b;
+  --g1: #557153;
+  --g2: #7d8f69;
+  --g3: #a9af7e;
+  --g4: #e6e5a3;
 }
 
 * {
@@ -30,11 +34,16 @@ body {
   line-height: 1.6;
   color: var(--blk);
   background-color: var(--wht);
+  font-family: "Pacifico", cursive;
 }
 
 /*****************
 General styling / Elements
 *****************/
+
+p {
+  font-family: "Poppins", sans-serif;
+}
 
 /*****************
 images
@@ -43,6 +52,13 @@ images
 img {
   width: 100%;
   display: block;
+}
+
+.img-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
 }
 
 /*****************
@@ -54,9 +70,35 @@ button {
   font-family: inherit;
 }
 
+.header-nav-link {
+  color: var(--g4);
+  font-size: 1.5rem;
+}
+
+.header-nav-link:hover {
+  color: var(--wht);
+}
+
 /*****************
 Typography
 *****************/
+
+.logo {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--g4);
+}
+
+.hero-heading {
+  color: var(--g2);
+  font-size: 1.5rem;
+}
+
+.img-card-destination {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(blk);
+}
 
 /*****************
 layout
@@ -68,6 +110,69 @@ layout
   margin: 0 auto;
 }
 
+header {
+  background-color: var(--g1);
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.header-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-nav-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero-text {
+  margin-bottom: 2rem;
+}
+
+#img-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-card {
+  margin-bottom: 1rem;
+  border: 2px solid var(--g3);
+  padding: 1rem;
+  border-radius: 6px;
+  width: 100%;
+}
+
+footer {
+  background-color: var(--g1);
+}
+
+.footer-container {
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--wht);
+}
+
 /*****************
 Media Queries
 *****************/
+
+@media (min-width: 700px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-nav-list-item {
+    display: inline-block;
+    margin-left: 2rem;
+  }
+  #img-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .img-card {
+    width: 30%;
+  }
+}
